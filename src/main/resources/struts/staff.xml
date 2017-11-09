@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+        "http://struts.apache.org/dtds/struts-2.5.dtd">
+
+<struts>
+    <package name="staff" extends="json-default">
+    <action name="staffAction_findAll" class="com.lanou.crm.staff.action.StaffAction" method="list">
+        <result name="success">/WEB-INF/pages/staff/listStaff.jsp</result>
+    </action>
+
+        <action name="staffAction_addStaff" class="com.lanou.crm.staff.action.StaffAction" method="add">
+            <result name="success">/WEB-INF/pages/staff/addStaff.jsp</result>
+        </action>
+
+        <action name="staffAction_login" class="com.lanou.crm.staff.action.StaffAction" method="login">
+            <result name="success">/WEB-INF/pages/frame.jsp</result>
+            <result name="error">/WEB-INF/pages/error.jsp</result>
+        </action>
+
+    </package>
+</struts>

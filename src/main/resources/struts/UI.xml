@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+        "http://struts.apache.org/dtds/struts-2.5.dtd">
+
+<struts>
+
+    <package name="frame" extends="json-default">
+    <action name="UIAction_frame_top" class="com.lanou.crm.staff.action.UIAction">
+        <result name="success">/WEB-INF/pages/frame/top.jsp</result>
+    </action>
+
+    <action name="UIAction_frame_left" class="com.lanou.crm.staff.action.UIAction">
+        <result name="success">/WEB-INF/pages/frame/left.jsp</result>
+    </action>
+
+    <action name="UIAction_frame_left1" class="com.lanou.crm.staff.action.UIAction" method="left1">
+        <result name="success">/WEB-INF/pages/frame/left1.jsp</result>
+    </action>
+
+    <action name="UIAction_frame_left2" class="com.lanou.crm.staff.action.UIAction" method="left2">
+        <result name="success">/WEB-INF/pages/frame/left2.jsp</result>
+    </action>
+
+    <action name="UIAction_frame_right" class="com.lanou.crm.staff.action.UIAction" method="right">
+        <result name="success">/WEB-INF/pages/frame/right.jsp</result>
+    </action>
+
+    <action name="UIAction_frame_control" class="com.lanou.crm.staff.action.UIAction" method="control">
+        <result name="success">/WEB-INF/pages/frame/control.jsp</result>
+    </action>
+    </package>
+</struts>
